@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../fuentes/DancingScript.ttf');
+}
+body {
+	margin: 1%;
+	background-color: #02010a;
+}
+.contenido {
+	font-family: DancingScript;
+	width: 100%;
+	text-align: center;
+	display: grid;
+}
+header {
+	padding: 3px 10px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #5b7989;
+	animation-name: nav-animacion;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0.1s;
+	-o-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+@-webkit-keyframes nav-animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+header nav {
+	width: 250px;
+	height: 50px;
+	margin: 0 auto;
+}
+header > h1 {
+	margin: 1%;
+	font-size: 2.5em;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+}
+
+nav > h2 {
+	margin: 1%;
+}
+nav h2 a {
+	color: white;
+}
+a[href^='index']{
+  text-decoration: none;
+}
+section {
+	display: grid;
+	margin: 0 auto;
+	height: 100%;
+	text-align: center;
+}
+
+figure img {
+	padding: 1px 1px;
+	width: 100%;
+}
+
+footer {
+	padding: 1px 10px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6D5C5;
+	text-align: left;
+}
+footer ul {
+	height: -100px: 
+}
+footer ul li{
+	list-style: none;
+	font-weight: bold;
+}
+footer ul li a > img{
+	margin-right: 5px;
+}
+
+footer ul li a{
+	color: black;
+	text-decoration: none;
+}
+.bloque {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.Links {
+	display: flex;
+	flex-direction: row;
+}
+.Links > h2 {
+	text-align: center;
+	width: 33.3%;
+}
+.bloque{
+	background-color: #82c3a6;
+	width: 100%;
+}
+.bloque figure {
+	margin: 20px 40px;
+}
+.bloque2 {
+	background-color: #d5c75f;
+	width: 100%;
+}
+.bloque2 figure {
+	margin: 20px 40px;
+}
+#imagen1{
+	border: 1px solid;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+}
+#imagen2 img{
+	float: left;
+	border: 1px solid;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+	transition-duration: 1s;
+	transition-property: transform box-shadow;
+	margin: 5px auto;
+	}
+#imagen2 img:hover {
+	transform: rotate(10deg);
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+#imagen2 h2 a {
+	color: black;
+}
+
+#imagen3 img{
+	float: right;
+	border: 1px solid;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+	transition-duration: 1s;
+	transition-property: transform box-shadow;
+	margin: 5px auto;
+	}
+#imagen3 img:hover {
+	transform: translate(20px, -5px);
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+#imagen3 h2 a {
+	color: black;
+}
+
+
+
+@media (min-width: 900px){
+	.contenido {
+		width: 900px;
+		margin: 0 auto;
+	}
+	header h1{
+		height: 100%;
+  		float: left;
+  		padding: 0.5% 10.55 0 0;
+	}
+	header nav  {
+		margin-top: 2%;
+		margin-right: 2%;
+  		
+	}
+	header nav a{
+		float: right; 
+	}
+	section {
+		width: 100%;
+	}
+
+	.Links > h2 {
+	text-align: none;
+	flex: none;
+	}
+	.bloque2 {
+		display: flex;
+		flex-direction: row;
+	}
+	.columnas {
+		display: flex;
+		flex-direction: row;
+	}
+	#imagen2 {
+		width: 50%;
+	}
+	#imagen3 {
+		width: 50%;
+	}
+	#columna1 {
+		width: 25%;
+	}
+	#columna2 {
+		width: 25%;
+	}
+	#columna3 {
+		width: 25%;
+	}
+	#columna4 {
+		width: 25%;
+	}
+}
